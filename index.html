@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BrightAlign 24/7 Orthodontics</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+
+    <body>
+        <header class="navbar">
+            <h1 class="logo">BrightAlign 24/7</h1>
+
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2>Orthodontic Care for Night Professionals</h2>
+            <p>Appointments between 6 PM - 2 AM</p>
+            <button class="cta-btn">Book Night Appointment</button>
+        </section>
+
+        <section id="calculator" class="calculator-section">
+            <h2>Commuter Value Calculator</h2>
+            <div class="calculator">
+                <label for="commute">Daily Commute Time (hours)</label>
+                <input type="number" id="commute" aria-label="Commute Time">
+                <label for="wage">Hourly Wage ($)</label>
+
+                <input type="number" id="wage" aria-label="Hourly Wage">
+                <button id="calculateBtn">Calculate Savings</button>
+                <div id="result" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+
+            <h2>Service Tiers</h2>
+            <div class="service-grid">
+
+                <div class="card">
+                    <img src="assets/aligner.jpg" alt="Midnight Aligners clear dental aligners">
+                    <h3>Midnight Aligners</h3>
+                    <p>Standard invisible aligners designed for nighttime appointments.</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/braces.jpg" alt="Professional commuter braces treatment">
+                    <h3>Commuter Braces</h3>
+                    <p>Durable fixed braces ideal for busy professionals and commuters.</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/emergency.jpg" alt="Emergency orthodontic wire repair">
+                    <h3>The 2 AM Emergency</h3>
+                    <p>Immediate orthodontic repair service for broken wires and urgent issues.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <button id="emergencyBtn" class="emergency-btn" aria-label="Emergency Wire Fix">
+            Emergency Wire Fix
+        </button>
+
+        <div id="emergencyModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Emergency Repair Request</h2>
+
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <textarea placeholder="Describe the problem"></textarea>
+                    <button type="submit">Send Request</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+
+    </body>
+
+</html>
